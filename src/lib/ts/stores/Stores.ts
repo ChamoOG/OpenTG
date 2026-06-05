@@ -402,7 +402,7 @@ function indexedDBBackedStoreForSave(storeName: string) {
 			}
 		},
 
-		createNew: async (startingCash: number = 1000) => {
+		createNew: async (startingCash: number = 100000000000000) => {
 			const saveid = await saves.add({
 				name: 'Save 1',
 				saveType: 'Auto',
