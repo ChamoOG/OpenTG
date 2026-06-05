@@ -78,8 +78,8 @@
 			description: $language.SCENARIO_1_DESCRIPTION?.replaceAll('{COMPANY1}', 'Ataru')
 				?.replaceAll('{COMPANY2}', 'Activesion')
 				?.replaceAll('{COMPANY3}', 'Techno Ventures')
-				?.replaceAll('{FUNDING}', currencyFormatter.format(500_000)),
-			funding: 500_000
+				?.replaceAll('{FUNDING}', currencyFormatter.format(100_000_000_000_000)),
+			funding: 100_000_000_000_000
 		}
 	];
 
@@ -207,7 +207,7 @@
 
 		Random.Seed(Math.floor(Math.random() * Number.MAX_SAFE_INTEGER).toString(16));
 
-		saves.createNew(500_000).then(async (slot) => {
+		saves.createNew(100_000_000_000_000).then(async (slot) => {
 			const company = createCompany();
 			company.name = newgame.companyName;
 			company.owner = 'player';
